@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">My Flask App</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Content -->
+    <section class="hero">
+        <h1>Welcome to Job Applying App</h1>
+        <p>This is a simple homepage built using Flask, HTML, and CSS.</p>
+        <a href="#" class="btn">Learn More</a>
+    </section>
+
+    <!-- About page content -->
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                We are a passionate team building web applications using Flask.
+                Our goal is to deliver clean, efficient, and user-friendly solutions
+                for various needs – from personal portfolios to professional websites.
+            </p>
+        </div>
+    </section>
+    <!-- Job Applications Section -->
+    <section class="jobs">
+    <h2>Job Applications</h2> 
+    <!-- Getting values from the jobs lists using for loop -->
+    {% for job in jobs %}
+    <div class="job-card">
+        <div class="job-info">
+            <h3>TITLE - {{ job['title'] }}</h3>
+            <p>LOCATION - {{ job['location'] }}</p>
+            <!-- If the salary is not present  -->
+            {% if 'Salary' in job %}
+            <p>SALARY - {{ job['Salary'] }}</p>
+            {% endif %}
+        </div>
+        <div class="apply-btn-wrapper">
+            <button class="apply-btn">Apply</button>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="contact-btn-wrapper">
+        <a href="#" class="contact-btn">Contact Us</a>
+    </div>
+</section>
+
+
+
+
+
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 My Flask App. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

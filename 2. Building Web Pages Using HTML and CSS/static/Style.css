@@ -1,0 +1,179 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0097a7;
+}
+
+/* About page content */
+/* About Section */
+.about {
+    background-color: #e9ecef;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+/* Jobs Section */
+.jobs {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.jobs h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.job-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding: 20px 0;
+}
+
+.job-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.job-info p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.apply-btn {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* Contact Us Button */
+.contact-btn-wrapper {
+    margin-top: 40px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #000;
+    color: white;
+}
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
